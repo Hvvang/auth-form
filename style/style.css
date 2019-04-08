@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    color: #252525;
+    background: linear-gradient(#6b77fa, #9198e5);  
+}
+
+h1, p, span, label {
+    pointer-events: none; 
+}
+
+.container {
+    width: 325px;
+    height: 300px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.4); 
+}
+
+.auth-form {
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.auth-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.auth-form_inputs {
+    position: relative;
+    margin-top: 20px;
+}
+
+input {
+    height: 25px;
+    width: 100%;
+    border-style: none;
+    border-bottom: 1.5px solid #fff;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    transition-duration: 1s;
+}
+
+label {
+    position: absolute;
+    bottom: 3px;
+    left: 2px;
+    pointer-events: none;
+    transition: all 0.7s ease;
+}
+
+.password {
+    margin-bottom: 10px;
+}
+
+.auth-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin-top: 5px;
+}
+
+button {
+    height: 100%;
+    width: 100px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    background-color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.auth-icons {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.auth-icons i {
+    cursor: pointer;
+    color: #252525;
+}
+
+input:focus + label ,
+input:valid + label {
+    transform: translateY(-150%);
+    opacity: 0;
+
+}
+
+.auth-input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.auth-input input {
+    width: 15px;
+    margin: 0 5px 0 0;
+}
